@@ -1,0 +1,24 @@
+server output
+
+Bank server on port 9092
+client ('127.0.0.1', 38382)
+Bank server on port 9092
+client ('127.0.0.1', 41862)
+Bank server on port 9092
+client ('127.0.0.1', 48446)
+
+
+client output
+
+
+teo2@teo2-VirtualBox:~/socket/lab05_bank_json$ python3 client.py
+Action (balance / deposit / withdraw): deposit
+Amount: 30000
+Balance: 30000
+teo2@teo2-VirtualBox:~/socket/lab05_bank_json$ python3 client.py
+Action (balance / deposit / withdraw): balance
+Balance: 0
+teo2@teo2-VirtualBox:~/socket/lab05_bank_json$ python3 client.py
+Action (balance / deposit / withdraw): withdraw
+Amount: 20000
+Error: insufficient funds
