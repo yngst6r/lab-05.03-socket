@@ -1,0 +1,16 @@
+client output
+
+teo2@teo2-VirtualBox:~/socket/lab02_tcp_echo_reusable$ python3 client.py
+message (exit to quit): hello
+echo hello
+message (exit to quit): exit
+
+server output
+
+teo2@teo2-VirtualBox:~/socket/lab02_tcp_echo_reusable$ python3 server.py
+server is listening
+new client accepted ('127.0.0.1', 55348)
+received hello
+received exit
+client left, waiting for next
+
