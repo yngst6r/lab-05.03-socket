@@ -1,0 +1,16 @@
+client output
+
+teo2@teo2-VirtualBox:~/socket/lab03_tcp_echo_timeouts$ python3 client.py
+message (exit to quit): hi
+echo hi
+
+server output
+
+teo2@teo2-VirtualBox:~/socket/lab03_tcp_echo_timeouts$ python3 server.py
+server is listening on 9090
+new client ('127.0.0.1', 34924)
+received hi
+client left
+no client, listening again
+no client, listening again
+^Cserver stop
