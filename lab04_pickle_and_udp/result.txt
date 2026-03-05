@@ -1,0 +1,22 @@
+client output
+
+teo2@teo2-VirtualBox:~/socket/lab04_pickle_and_udp/pickle$ python3 client.py
+echo {'name': 'alice', 'n': 42}
+teo2@teo2-VirtualBox:~/socket/lab04_pickle_and_udp/pickle$ cd ~/socket/lab04_pickle_and_udp/udp
+teo2@teo2-VirtualBox:~/socket/lab04_pickle_and_udp/udp$ python3 client.py
+echo hello udp
+
+
+server output
+
+teo2@teo2-VirtualBox:~$ cd ~/socket/lab04_pickle_and_udp/pickle
+teo2@teo2-VirtualBox:~/socket/lab04_pickle_and_udp/pickle$ python3 server.py
+teo2@teo2-VirtualBox:~/socket/lab04_pickle_and_udp/pickle$ cd ~/socket/lab04_pickle_and_udp/udp
+teo2@teo2-VirtualBox:~/socket/lab04_pickle_and_udp/udp$ python3 server.py
+^CTraceback (most recent call last):
+  File "/home/teo2/socket/lab04_pickle_and_udp/udp/server.py", line 5, in <module>
+    data, addr = sock.recvfrom(1024)
+                 ^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+
